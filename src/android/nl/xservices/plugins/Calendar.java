@@ -188,7 +188,7 @@ public class Calendar extends CordovaPlugin {
         Log.d(LOG_TAG, "Permission Denied!");
         this.callback.error("Please allow access to the Calendar and try again.");
         return;
-      } else if(r == PackageManager.PERMISSION_GRANTED) {
+      } else if (r == PackageManager.PERMISSION_GRANTED) {
         this.callback.success()
       }
     }
